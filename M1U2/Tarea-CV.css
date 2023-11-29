@@ -1,0 +1,39 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+color: blueviolet; /**esto es un comentario en css**/
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-color:beige;
+text-align: center;
+text-transform:uppercase;
+text-shadow: -10px -3px 9px rgba(0,0,0,0.6);
+}
+img {
+    filter: saturate(234%);
+    -webkit-filter: saturate(234%);
+    -moz-filter: saturate(234%);
+    margin-left:10%;
+}
+div{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    border-top: 10px double #ff6550;
+    border-bottom: 10px double #ff6550;
+}
+h2{
+    background-color: blueviolet;
+}
+.verde{
+    color: darkgreen;
+    font-size: 20px;
+}
+.text{
+  font-style: italic;
+}
+footer{
+    font-weight: bold;
+}
