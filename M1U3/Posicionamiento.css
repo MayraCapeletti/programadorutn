@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    height: 300vh;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 3rem;
+}
+div{
+    box-shadow: 0 5px 10px black rgba(0, 0, 0, 0.261); 
+    border-radius: 5px;
+}
+.contenedor{
+    background-color: grey;
+    border:2px solid red;
+	margin:0 auto;
+	height: 500px;
+}
+.static{
+    background-color:aliceblue;
+    font-size: 25px;
+    width: 94%;
+}
+.relative{
+    background-color: green;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    margin-bottom:20px;
+    
+}
+.absolute{
+    background-color:blueviolet;
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    
+}
+.fixed{
+    background-color: blue;
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    font-size: 25px;
+}
