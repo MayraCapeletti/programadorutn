@@ -1,0 +1,88 @@
+.flex-container1{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    border: 2px solid black;
+}
+.flex-container1 div{
+    background-color: blanchedalmond;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px solid black;
+}
+.flex-direction{
+	background-color: blue;
+	display: inline-flex;
+	/* flex-direction: row; */
+	flex-direction: row-reverse
+	/*flex-direction: column;*/
+	/*flex-direction: column-reverse;*/
+
+}
+
+.flex-direction div{
+	background-color: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	font-size: 30px;
+		}
+
+.flex-wrap{
+    background-color:chartreuse;
+	display: flex;
+	 /* flex-wrap: nowrap;  */
+	/*flex-wrap: wrap;*/ 
+	flex-wrap: wrap-reverse;
+}
+.flex-wrap div{
+    background-color: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	font-size: 30px;
+}
+
+.align-content{
+    background-color:blueviolet;
+	display: inline-flex;
+	flex-wrap: wrap;
+    height: 300px;
+    /* align-content: center; */
+	/*align-content: flex-start;*/
+	align-content: flex-end;
+	/*align-content: center;*/
+	/*align-content: stretch;*/
+	/*align-content: space-around;*/
+	/*align-content: space-between;*/
+}
+.align-content div{
+    background-color: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	font-size: 30px;
+}
+
+.align-items{
+	height: 500px;
+	background-color: blue;
+	display: flex;
+	align-items: flex-start;
+	/* align-items: flex-end; */
+	align-items: center;
+	/* align-items: stretch; */
+	/* align-items: baseline; */
+}
+
+
+.align-items div{
+	background-color:#ccc;
+	margin:10px;
+	font-size: 30px;
+	width: 100px;
+	height: 100px;
+}
