@@ -1,0 +1,30 @@
+.cambios{
+    display: flex;
+    gap: 10px;
+}
+.cuadrado{
+         width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: rgb(230, 230, 230);
+        font-size: 12px;
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        cursor: pointer;
+}
+
+#box1 {
+    background-color: red;
+    
+}
+#box2 {
+    background-color: blue;
+    
+}
+
+#box3 {
+    background-color: green
+}
+    
+
