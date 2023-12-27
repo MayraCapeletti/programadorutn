@@ -1,0 +1,56 @@
+/* font-family: 'Alfa Slab One', serif; */
+.navbar{
+    background-color: beige;
+}
+h1, h2{
+    font-family: 'Alfa Slab One', serif;
+}
+.hero{
+    background: url(../img/portada.jpg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 600px;
+    color:blueviolet;  
+}
+#productos{
+    color:blueviolet;
+    margin-right: 10rem;
+}
+.lista-productos{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.lista-productos a{
+    background-color: #fff;
+    font-family: 'Alfa Slab One', serfi;
+    text-decoration: none;
+    font-size: 1rem;
+    color:mediumorchid;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-productos a img{
+    width: 120px;
+    height: 70px;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.opiniones{
+    background-color: #dadada;
+    padding-bottom: 4rem !important;
+    color:blueviolet;
+    display: grid;
+    place-items: center;
+    
+}
+.opinion{
+    text-align: center;
+    padding: 50px 20px;
+    color:mediumorchid;
+}
