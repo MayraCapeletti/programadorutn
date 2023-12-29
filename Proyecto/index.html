@@ -1,136 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
-      rel="stylesheet"
-    />
-    <title>Mi Pasteleria</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mi Pastelería</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Quién está detrás..?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contactos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Productos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Tortas y Tartas</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Macarons y mini tartitas</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Box de regalo</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Search"
-            />
-            <button class="btn btn-light" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet" />
+  <title>Mi Pasteleria</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-      <div id="home" class="row align-items-center hero">
-        <div class="col-lg-3 offset-lg-2">
-          <h1>Pastelería Artesanal</h1>
-          <p>
-            Productos personalizados, elaborados artesanalmente y de forma
-            casera sin conservantes ni aditivos, hechos a mano y decorados uno
-            por uno con mucho amor.
-          </p>
-        </div>
+      <a class="navbar-brand" href="#">Mi Pastelería</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#productos" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Productos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#productos">Tortas y Tartas</a></li>
+              <li><a class="dropdown-item" href="#productos">Macarons y mini tartitas</a></li>
+              <li><a class="dropdown-item" href="#productos">Box de regalo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Quién está detrás..?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conocenos">Contactos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+          <button class="btn btn-light" type="submit">Buscar</button>
+        </form>
       </div>
     </div>
-
+  </nav>
+  <div class="container-fluid">
+    <div id="home" class="row align-items-center hero">
+      <div class="col-lg-3 offset-lg-2">
+        <h1>Pastelería Artesanal</h1>
+        <p>
+          Productos personalizados, elaborados artesanalmente y de forma
+          casera sin conservantes ni aditivos, hechos a mano y decorados uno
+          por uno con mucho amor.
+        </p>
+      </div>
+    </div>
     <div class="row my-3">
-     <div id="productos" class="col-md-5 offset-md-2 py-3">
+      <div id="productos" class="col-md-5 offset-md-2 py-3 scroll_section">
         <h2>Productos</h2>
         <div class="lista-productos">
           <div class="row row-cols-2">
-            <div class="col"> <a href="#" 
-              ><img src="img/macrrones.jpg" />Macarons</a></div> 
-            <div class="col"><a href="#"
-              ><img src="img/tortas y tartas.jpg" />Tortas</a></div>
-            <div class="col"><a href="#"><img src="img/mini-tortas.jpg" />Mini Tortas</a></div>
-            <div class="col"><a href="#"><img src="img/box.jpg" />Box regalos</a></div>
+            <div class="col"> <a href="#"><img src="img/macarrones.webp" />Macarons</a></div>
+            <div class="col"><a href="#"><img src="img/tortas.webp" />Tortas</a></div>
+            <div class="col"><a href="#"><img src="img/minis-tortas.webp" />Mini Tortas</a></div>
+            <div class="col"><a href="#"><img src="img/box.webp" />Box regalos</a></div>
           </div>
         </div>
       </div>
-      
-
-     
       <div class="col-md-3 my-3">
         <div class="rounded py-5 opiniones">
           <h2 class="text-center">Opiniones</h2>
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="true">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -152,28 +102,14 @@
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -183,10 +119,55 @@
     </div>
     <!--cierre todo-->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div id="conocenos" class="row py-4 scroll_section">
+      <div class="col-md-4 offset-md-2">
+        <h2 class="visitanos">Visitanos</h2>
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2194088911237!2d-58.422682525146875!3d-34.59861295722708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca62d4cf1563%3A0x686de505d84c67e6!2sAv.%20Medrano%20951%2C%20C1179AAQ%20CABA!5e0!3m2!1ses-419!2sar!4v1703881189302!5m2!1ses-419!2sar"></iframe>
+        </div>
+      </div><!--cierra visitanos-->
+      <!--arranca formulario-->
+      <div class="col-md-4 mt-4 my-sm-0 contactanos">
+        <h2>Contactanos</h2>
+        <form class="row g-3">
+          <div class="col-mb-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="col-mb-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido">
+          </div>
+          <div class="col-mb-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="nombre" placeholder="name@example.com">
+          </div>
+          <div class="col-mb-12">
+            <label for="tel" class="form-label">Tel</label>
+            <input type="text" class="form-control" id="tel" placeholder="...">
+          </div>
+          <div class="col-mb-12">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaaje" rows="3"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+
+
+      </div>
+
+
+    </div><!--cierra conocenos-->
+    
+  </div><!--cierra fluido-->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
