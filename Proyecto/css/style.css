@@ -5,6 +5,14 @@
 h1, h2{
     font-family: 'Alfa Slab One', serif;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima del viewport */
+    margin: 0;
+  }
+  
+  
 .hero{
     background: url(../img/portada.jpg) no-repeat;
     background-size: cover;
@@ -21,7 +29,6 @@ h1, h2{
     padding: 0;
     list-style: none;
 }
-
 
 .lista-productos a{
     background-color: #fff;
@@ -60,20 +67,155 @@ h1, h2{
     max-width: 100% !important;
 }
 
-.mapa iframe{
-    width: 100%;
-    aspect-ratio: 1.2;
-}
 html{
     scroll-behavior: smooth;
 }
 .scroll_section{
-    scroll-margin-top: 60px;
+    scroll-margin-top: 80px;
 }
 
-.visitanos{
-    color:rgb(185, 108, 100);
+section .contactForm{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 100px;
+    width: 90%;
+    height: 90%;
+    background-color: #5f5f6e;
+    box-shadow: 1px 9px 20px -5px rgb(0, 0, 0, 0, 59);
+    border-radius: 30px;
 }
-.contactanos{
-    color:rgb(185, 108, 100);
+section .contactForm .form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 30px;
+}
+section .contactForm .form form{
+    width: 100%;
+}
+section .contactForm .form texto h2{
+    color: #1766a3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+section .contactForm .form texto p{
+    color: #0b426c;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+section .contactForm .form form .input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+section .contactForm .form form .input-box input{
+    color: #1766a3;
+    font-weight: 700;
+}
+section .contactForm .form form .input-box input[type="text"],
+section .contactForm .form form .input-box input[type="email"]
+ {
+    border: none;
+    background-color: #cbebfb;
+    padding: 10px;
+    border-radius: 15px;
+    color: #1766a3;
+    resize: none;
+}
+
+
+section .contactForm .form form .input-box input[type="text"],
+section .contactForm .form form .input-box input[type="email"]
+ {
+    outline: 2px solid #1766a3;
+}
+
+
+.container{
+    
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      
+}
+.footer{
+    width: 100%;
+    background-color: #3D3D49;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    position: relative; /* Agregamos esta línea */
+    bottom: 0;
+}
+.footer-link{
+    display: flex;
+}
+.link{
+    width: 300px;
+}
+.link h3{
+    font-size: 18px;
+    color: #D6D6E2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.link a{
+    font-size: 17px;
+    color: #b7b8be;
+    display: block;
+    margin-bottom: 20px;
+}
+.social{
+    display: flex;
+    margin-bottom: 15px;
+}
+.social a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color:#b7b8be;
+    margin: 0 15px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color:#3D3D49;
+    font-size: 20px;
+}
+.social a:hover{
+    background-color:aqua;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background-color: transparent;
+    padding: 14px;
+    outline: none;
+    border: 2px solid #5f5f6e;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+::placeholder{
+    color: #b7b8be;
+}
+.btn{
+    background-color: #00c3ff;
+    color: #ffffff;
+    border: 0;
+}
+.atencion{
+    padding: 10px 0 0 90px;
+    
+}
+.atencion p{
+    font-size: 15px;
+    color:#b7b8be;
 }
