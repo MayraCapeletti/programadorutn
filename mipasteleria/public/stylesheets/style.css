@@ -1,4 +1,7 @@
 /* font-family: 'Alfa Slab One', serif; */
+
+
+
 .navbar{
   background-color: #72695c;
 }
@@ -28,7 +31,9 @@ body {
   overflow-y: scroll;
 
 }
-
+.logo a{
+  font-size: 15px;
+}
 
 .hero{
   background: url(../images/baked-goods-1853261_640.jpg) no-repeat;
