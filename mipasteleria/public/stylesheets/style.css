@@ -1,24 +1,54 @@
 /* font-family: 'Alfa Slab One', serif; */
 .navbar{
-  background-color: beige;
+  background-color: #72695c;
+}
+.navbar-brand{
+  color:#f9d9ac;
+}
+a.nav-link{
+  color:#f9d9ac;
+}
+.home{
+  color:#f9d9ac;
+}
+.navbar-nav{
+  margin-left: 80px;
 }
 h1, h2{
   font-family: 'Alfa Slab One', serif;
+   
 }
+
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Altura mínima del viewport */
   margin: 0;
+  overflow-y: scroll;
+
 }
 
 
 .hero{
-  background: url(../images/portada.jpg) no-repeat;
+  background: url(../images/baked-goods-1853261_640.jpg) no-repeat;
   background-size: cover;
   height: 50vh;
   min-height: 600px;
   color:rgb(185, 108, 100);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1{
+  margin-bottom: 20px;
+}
+.pasteleria{
+  font-size: 1em;
+  text-align:left;
+  max-width: 400px;
+  margin: 0 10px 0 10px;
 }
 #productos{
   color:rgb(185, 108, 100);
@@ -71,7 +101,7 @@ html{
   scroll-behavior: smooth;
 }
 .scroll_section{
-  scroll-margin-top: 80px;
+  scroll-margin-top: 50px;
 }
 
 section .contactForm{
@@ -145,61 +175,78 @@ section .contactForm .form form .input-box input[type="email"]
     
 }
 .footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  background-color: #3D3D49;
-  color: #fff;
+  background-color: #72695c;
   text-align: center;
   padding: 20px 0;
-  margin-top: auto;
-  position: relative; /* Agregamos esta línea */
+  margin:auto;
+  position: relative; 
   bottom: 0;
 }
 .footer-link{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
 }
 .link{
   width: 300px;
+  margin-bottom: 20px;
+  
 }
 .link h3{
   font-size: 18px;
-  color: #D6D6E2;
+  color: #f9d9ac;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin: 0px 0px 20px 0;
+  
 }
 .link a{
   font-size: 17px;
-  color: #b7b8be;
+  color: #f9d9ac;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
 .social{
   display: flex;
-  margin-bottom: 15px;
+  flex-direction: column;
+  align-items: center;
+  
 }
 .social a{
   display: inline-block;
   min-height: 40px;
   width: 40px;
-  background-color:#b7b8be;
-  margin: 0 15px 10px 0;
+  background-color:#f9d9ac;
+  margin: 0 0 10px 0 ;
   text-align: center;
   line-height: 40px;
   border-radius: 50px;
-  color:#3D3D49;
+  color:black;
   font-size: 20px;
 }
 .social a:hover{
-  background-color:aqua;
+  background-color:#f9d9ac;
 }
 form{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+.input-box{
+  margin-bottom: 15px;
+}
+
 input{
   background-color: transparent;
   padding: 14px;
   outline: none;
-  border: 2px solid #5f5f6e;
+  border: 2px solid #f9d9ac;
   font-size: 17px;
   margin-bottom: 5px;
 }
@@ -207,15 +254,13 @@ input{
   color: #b7b8be;
 }
 .btn{
-  background-color: #00c3ff;
-  color: #ffffff;
-  border: 0;
+  background-color: #f9d9ac;
+  color: black;
+  border: 2px solid #f9d9ac;
 }
-.atencion{
-  padding: 10px 0 0 90px;
-  
-}
-.atencion p{
+
+
+.atencion {
   font-size: 15px;
   color:#b7b8be;
 }
