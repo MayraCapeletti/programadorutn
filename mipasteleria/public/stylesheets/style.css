@@ -39,7 +39,7 @@ body {
   background: url(../images/baked-goods-1853261_640.jpg) no-repeat;
   background-size: cover;
   height: 50vh;
-  min-height: 600px;
+  ;
   color:rgb(185, 108, 100);  
   display: flex;
   flex-direction: column;
@@ -107,6 +107,35 @@ html{
 }
 .scroll_section{
   scroll-margin-top: 50px;
+}
+
+.container-section{
+  margin: 0 0 0 50px ;
+  min-height: 600px;
+  width: 75%;
+  padding: 150px 0;
+
+}
+.section-title{
+  font-family: 'Alfa Slab One', serif;
+  font-size: 2rem;
+  color:rgb(185, 108, 100) ;
+  
+}
+.nosotros{
+  display: flex;
+}
+.nosotros-texto{
+  width: 60%;
+}
+.texto{
+
+}
+.nosotros-img{
+  width: 40%;
+}
+.img{
+
 }
 
 section .contactForm{
