@@ -8,6 +8,13 @@ body {
   overflow-y: scroll;
 
 }
+html{
+  scroll-behavior: smooth;
+}
+.scroll_section{
+  scroll-margin-top: 50px;
+}
+
 h1, h2{
   font-family: 'Alfa Slab One', serif;
   font-size: 2rem;
@@ -52,7 +59,7 @@ a.nav-link{
   background-size: cover;
   height: 50vh;
   min-height: 600px;
-  color:rgb(185, 108, 100);  
+  color:rgb(127,38,41);  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,14 +134,49 @@ font-size: 20px;
   
 } 
 
+.contenedor-2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.section-2-title{
+  font-family: 'Alfa Slab One', serif;
+  color:rgb(127,38,41);
+  font-size: 36px;
+  text-align: center;
+  padding: 50px 0 10px 0; 
+}
+
+.galery{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.galery-content{
+  width: 20%;
+  display: flex;
+  padding: 10px 0 0 0;
+  margin-left: 10px;
+  align-content: center;
+  
+}
+.galery-content img{
+  width: 85%;
+  object-fit: cover;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
 
 
-html{
-  scroll-behavior: smooth;
-}
-.scroll_section{
-  scroll-margin-top: 50px;
-}
+
 
 .container-section{
   margin: 0 0 0 50px ;
@@ -146,7 +188,7 @@ html{
 .section-title{
   font-family: 'Alfa Slab One', serif;
   font-size: 2rem;
-  color:rgb(185, 108, 100) ;
+  color: rgb(127,38,41);
   padding: 50px 10px 0 50px;
   
   
