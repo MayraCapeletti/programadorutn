@@ -19,6 +19,7 @@ a.nav-link{
 }
 h1, h2{
   font-family: 'Alfa Slab One', serif;
+  font-size: 2rem;
    
 }
 
@@ -31,15 +32,15 @@ body {
   overflow-y: scroll;
 
 }
-.logo a{
-  font-size: 15px;
+.logo {
+  font-size: 30px;
 }
 
 .hero{
   background: url(../images/baked-goods-1853261_640.jpg) no-repeat;
   background-size: cover;
   height: 50vh;
-  ;
+  min-height: 600px;
   color:rgb(185, 108, 100);  
   display: flex;
   flex-direction: column;
@@ -49,15 +50,22 @@ body {
 .hero h1{
   margin-bottom: 20px;
 }
+.titulo-pasteleria{
+  margin-left: 40px;
+}
 .pasteleria{
   font-size: 1em;
-  text-align:left;
+  text-align:justify;
   max-width: 400px;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 30px;
+  
 }
 #productos{
   color:rgb(185, 108, 100);
   margin-right: 10rem;
+}
+.titulo-productos{
+  font-size: 30px;
 }
 .lista-productos{
   margin: 0;
@@ -70,7 +78,7 @@ body {
   font-family: 'Alfa Slab One', serfi;
   text-decoration: none;
   font-size: 1rem;
-  color:mediumorchid;
+  color:#f9d9ac;
   transition: all .2s ease-in-out;
   display: block;
 }
@@ -82,7 +90,9 @@ body {
   margin-top: 2rem;
   
 }
-
+.titulo-opiniones{
+  font-size: 25px;
+}
 .opiniones{
   background-color: #dadada;
   padding-bottom: 4rem !important;
@@ -120,23 +130,36 @@ html{
   font-family: 'Alfa Slab One', serif;
   font-size: 2rem;
   color:rgb(185, 108, 100) ;
+  padding: 50px 10px 0 50px;
+  
   
 }
 .nosotros{
   display: flex;
+  
 }
 .nosotros-texto{
   width: 60%;
+  padding: 3% 10% 0 0;
 }
 .texto{
-
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ text-align: justify;
+ margin-top: 25px;
+ 
 }
 .nosotros-img{
   width: 40%;
+  display: flex;
+  justify-content: space-between;
 }
-.img{
 
+.img1 , .img2 , .img3{
+  border-radius: 5px;
+  width: 250px;
+  margin: 0 10px 10px 10px;
 }
+
 
 section .contactForm{
   position: relative;
