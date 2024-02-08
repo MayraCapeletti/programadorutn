@@ -1,41 +1,19 @@
 <body>
-<section class="container-fluid">
-    <div class="contactForm">
-      <div class="form">
-        <div class="texto">
-          <h2>Hablemos</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum eius aperiam esse minus cumque
-            distinctio repudiandae architecto voluptatibus, delectus voluptate autem totam! Adipisci maiores, minima sed
-            aliquid deleniti assumenda?</p>
-        </div>
-        <form action="/contactos" method="post">
-          <div class="input-box">
-            <label for="nombre" class="form-label" >Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre">
-          </div>
-          <div class="input-box">
-            <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido" name="apellido">
-          </div>
-          <div class="input-box">
-            <label for="email" class="form-label">Email</label>
-            <input type="email"class="form-control"id="email" placeholder="name@example.com" name="email">
-          </div>
-          <div class="input-box">
-            <label for="tel" class="form-label">Tel</label>
-            <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
-          </div>
-          <div class="input-box">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" cols="30" rows="5" placeholder="Mensaje" name="mensaje"></textarea>
-          </div>
-          <div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </div>
-      </form>
-      <p>{{message}}</p>
-    </div>
-    </div>
+<section class="contenedor-3 section-3">
+  <div class="banner">
+   <img src="images/contactos.jpg" alt="">
+  </div>
+  <div class="form-container">
+    <h3 class="title-form">Envianos un mensaje</h3>
+    <form action="" class="form-contactos">
+      <input type="text" class="box item1" placeholder="Apellido y Nombre">
+      <input type="tel" class="box item2" placeholder="Telefono">
+      <input type="email" class="box item3" placeholder="Correo electronico">
+      <textarea name="" id="" class="box item4" cols="30" rows="6" placeholder="Mensaje"></textarea>
+      <input type="submit" class="submit" value="Enviar">
+    </form>
+  </div>
+    
   </section>
   
     
