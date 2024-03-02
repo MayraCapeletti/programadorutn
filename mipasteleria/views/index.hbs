@@ -27,47 +27,61 @@
           </div>
           <div class="productos-img">
             <img src="images/torta.webp" alt="">
-            <h3>Tortas</h3>
+           <h3>Tortas</h3>
             <p>Endulza tus momentos</p>
           </div>
+
           <div class="productos-img">
             <img src="images/minitarta.webp" alt="">
-            <h3>Mini Tartas</h3>
+           <h3>Mini tartas</h3>
             <p> Con distintos colores y rellenos.</p>
           </div>
+          
         </div>
     </section>
 
-    <section class="contenedor-2">
-      <h3 class="section-2-title">De nosotros lo mejor para vos</h3>
-      <div class="galery">
-        <div class="galery-content">
-          <img src="images/galeria1.webp" alt="">
-        </div>
-        <div class="galery-content">
-          <img src="images/galeria2.webp" alt="">
-        </div>
-        <div class="galery-content">
-          <img src="images/galeria3.webp" alt="">
-        </div>
-        <div class="galery-content">
-          <img src="images/galeria5.webp" alt="">
-        </div>
-        <div class="galery-content">
-          <img src="images/galeria4.webp" alt="">
-        </div>
-        <div class="galery-content">" 
-          <img src="images/galeria6.webp" alt="">
-        </div>
-        <div class="galery-content">
-          <img src="images/galeria8.webp" alt="">
-        </div>
-        <div class="galery-content">
-          <img src="images/galeria7.webp" alt="">
-        </div>
+    <div class="row my-3">
+      <div id="recetas" class="col-md-5 offset-md-2 scroll_section">
+      <h3 class="section-2-title">Recetas y Tips</h3>
+      <ul class="galery">
+        {{#each recetas}}
+        <li class="galery-content">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img src="images/galeria1.webp" alt="">{{titulo}}</a>  
+        </li>
+        {{/each}}
 
+      </ul>
       </div>
-    </section>
+    
+
+
+   {{#each recetas}}         <!-- Modal -->
+<div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="Modal">{{titulo}}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>{{subtitulo}}</p>
+        <p>{{cuerpo}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+</div>
+
+
+
+
+        
+
+     
     
     
   
