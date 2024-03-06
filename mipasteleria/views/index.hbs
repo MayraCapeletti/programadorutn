@@ -44,7 +44,7 @@
       <div id="recetas" class="col-md-5 offset-md-2 scroll_section">
       <h3 class="section-2-title">Recetas y Tips</h3>
       <ul class="galery">
-        {{#each recetas}}
+        {{#each novedades}}
         <li class="galery-content">
           <a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img src="images/galeria1.webp" alt="">{{titulo}}</a>  
         </li>
@@ -55,7 +55,7 @@
     
 
 
-   {{#each recetas}}         <!-- Modal -->
+   {{#each novedades}}         <!-- Modal -->
 <div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
