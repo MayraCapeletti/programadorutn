@@ -82,6 +82,38 @@ a.nav-link{
   
 }
 
+.form-group{
+  margin-bottom: 30px;
+}
+.form-group label{
+  font-family: 'Alfa Slab One';
+  font-size: 15px;
+  color:rgb(127,38,41);
+}
+.form-group p, input{
+  font-family: 'Alfa Slab One';
+  font-size: 10px;
+}
+
+.row h1, h4{
+  font-family: 'Alfa Slab One';
+  color:rgb(127,38,41);
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.thead-dark th{
+  font-size: 15px;
+  color:rgb(127,38,41);
+}
+
+.contenido-novedades th, td{
+  color:rgb(127,38,41);
+}
+
+.text-end a{
+  margin-bottom: 15px;
+}
 .contenedor-1{
   width: 100%;
   height: 100vh;
@@ -127,9 +159,9 @@ font-size: 20px;
 .productos-img h3{
   margin: 10px 0;
   font-size: 20px;
-  color: rgb(127,38,41);
-  
+  color: rgb(127,38,41);  
 }
+
 .productos-img p{
   font-size: 18px;
   color: rgb(127,38,41);
@@ -167,10 +199,24 @@ font-size: 20px;
   list-style-type: none;
 }
 .galery-content img{
-  width: 150%;
+  width: 100%;
   border-radius: 5px;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px; 
+}
+
+.galery-content a{
+  color: rgb(127,38,41);
+  align-items: center;
+}
+
+.modal-body p{
+  margin: 10px auto;
+  font-size: 15px;
+  color: rgb(127,38,41);
+}
+
+.modal-header h1{
+  color: rgb(127,38,41);
 }
 
 
@@ -236,18 +282,23 @@ font-size: 20px;
   left: 50%;
   bottom: 0;
   margin-left: -25%;  
+  text-align: center;
 }
 .title-form{
   font-size: 28px;
   font-family: 'Alfa Slab One', serif;
   color: #f9d9ac;
   text-align: center;
-  margin: 35px 0;
+  margin-top: 35px;
 }
 .form-contactos{
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 20px;
+  text-align: center;
+  justify-content: center;
+  display: grid; /* Cambio a display grid */
+  
 }
 
 .box{
@@ -275,29 +326,30 @@ font-size: 20px;
   border-radius: 5px;
   resize: none;
 }
-.submit{
-  grid-column: 1/3;
-  width: 25%;
-  height: 60px;
-  border: 0px;
-  outline: none;
-  border-radius: 5px;
-  margin: auto;
-  background-color: #f9d9ac;
-  color: black;
-  border: 2px solid #f9d9ac;
+
+  .btn-secondary{
+    grid-column: 1/3;
+    width: 25%;
+    height: 50px;
+    border: 0px;
+    outline: none;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #f9d9ac;
+    color: black;
+    border: 2px solid #f9d9ac;
+  
 }
 
 
 
 .container{
-  
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 25px 0;
-    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;   
 }
+
 .footer{
   display: flex;
   flex-direction: column;
