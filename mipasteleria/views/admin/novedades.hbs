@@ -8,11 +8,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-7" style="margin-top: 9px;">
+        <div class="col-6" >
         <h1>Listado de novedades</h1>
         </div>
-    <div class="col-2 text-right">
-        <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fas fa-plus"></i>Nuevo</a>
+    <div class="col-3 ">
+        <a href="/admin/novedades/agregar" class="btn btn-nuevo"><i class="fas fa-plus"></i>Nuevo</a>
+    </div>
+    <div class="col-3">
+        <form action="/admin/novedades" class="form-inline" method="get">
+        <input type="search" class="form-control" placeholder="Buscar" aria-label="Search" name="q" {{#if q}} value="{{q}}" {{/if}}>
+        
+        <button class="btn btn-buscar " type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        
+        </form>
     </div>
     </div>
 </div>
@@ -34,13 +42,18 @@
                     <td>{{titulo}}</td>
                     <td>{{{imagen}}}</td>
                     <td class="text-center">
-                        <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
-                        <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
+                        <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm "><i class="fa fa-pencil"></i></a>
+                        <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm "><i class="fa fa-trash"></i></a>
                     </td>
                 </tr>
                 {{/each}}
             </tbody>
         </table>
+        {{#if is_search}}
+            {{#unless novedades.length}}
+            <p>No se encontraron recetas</p>
+            {{/unless}}
+         {{/if}}   
     </div>
 </div>
 

@@ -37,9 +37,12 @@ h1, h2{
   padding-left: 200px;
 }
 
+
 .navbar-brand{
   color:#f9d9ac;
 }
+
+
 a.nav-link{
   color:#f9d9ac;
   margin-right: 20px;
@@ -55,6 +58,7 @@ a.nav-link{
   width: 30%;
   padding-left: 50px;
 }
+
 
 .hero{
   background: url(../images/baked-goods-1853261_640.jpg) no-repeat;
@@ -84,14 +88,18 @@ a.nav-link{
 
 .form-group{
   margin-bottom: 30px;
+  background-color: rgb(127,38,41);
+ 
 }
+
+
+
 .form-group label{
   font-family: 'Alfa Slab One';
   font-size: 15px;
   color:rgb(127,38,41);
 }
 .form-group p, input{
-  font-family: 'Alfa Slab One';
   font-size: 10px;
 }
 
@@ -109,11 +117,28 @@ a.nav-link{
 
 .contenido-novedades th, td{
   color:rgb(127,38,41);
+  
+}
+
+.col-6{
+  margin-top: 9px;
+
 }
 
 .text-end a{
   margin-bottom: 15px;
 }
+
+.form-inline{
+  margin-left: 50px;
+}
+
+.btn-buscar{
+  margin-left: 100px;
+}
+
+
+
 .contenedor-1{
   width: 100%;
   height: 100vh;
@@ -274,13 +299,14 @@ font-size: 20px;
 }
 .banner img{
   width: 100%;
+  
 }
 
 .form-container{
   width: 50%;
   position: absolute;
-  left: 50%;
-  bottom: 0;
+  right: 50%;
+  bottom: -65px;
   margin-left: -25%;  
   text-align: center;
 }
@@ -297,7 +323,7 @@ font-size: 20px;
   padding: 20px;
   text-align: center;
   justify-content: center;
-  display: grid; /* Cambio a display grid */
+  display: grid; 
   
 }
 
@@ -434,6 +460,10 @@ input .email .btn{
   color: black;
   border: 2px solid #f9d9ac;
   margin-top: 10px;
+}
+.btn:hover{
+  background-color: rgb(127,38,41);
+  border-color:rgb(127,38,41)
 }
 
 
