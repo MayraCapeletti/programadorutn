@@ -5,13 +5,16 @@
   </div>
   <div class="form-container">
     <h3 class="title-form">Envianos un mensaje</h3>
-    <form action="" class="form-contactos">
-      <input type="text" class="box item1" placeholder="Apellido y Nombre">
-      <input type="tel" class="box item2" placeholder="Telefono">
-      <input type="email" class="box item3" placeholder="Correo electronico">
-      <textarea name="" id="" class="box item4" cols="30" rows="6" placeholder="Mensaje"></textarea>
-      <button type="submit" class="btn-secondary ">Enviar</button>
+    <form action="/contactos" class="form-contactos" method="post">
+      <input type="text" class="box item1" placeholder="Apellido y Nombre" name="nombre">
+      <input type="tel" class="box item2" placeholder="Telefono" name="tel">
+      <input type="email" class="box item3" placeholder="Correo electronico" name="email">
+      <textarea name="mensaje" id="" class="box item4" cols="30" rows="6" placeholder="Mensaje"></textarea>
+      <button type="submit" class="btn-secondary " value="enviar">Enviar</button>
     </form>
+
+      <p class="mensaje">{{message}}</p>
+  
   </div>
     
   </section>

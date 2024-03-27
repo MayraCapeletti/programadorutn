@@ -92,13 +92,17 @@ a.nav-link{
  
 }
 
-
+.form-group-2{
+  margin-bottom: 30px;
+}
 
 .form-group label{
   font-family: 'Alfa Slab One';
   font-size: 15px;
   color:rgb(127,38,41);
 }
+
+
 .form-group p, input{
   font-size: 10px;
 }
@@ -299,6 +303,13 @@ font-size: 20px;
 }
 .banner img{
   width: 100%;
+ 
+  
+}
+
+.mensaje{
+  color: #f9d9ac;
+  font-size: 28px;
   
 }
 

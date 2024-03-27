@@ -4,15 +4,15 @@
             <h4>Modificar la novedad</h4>
             <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
             <input type="hidden" value="{{novedad.id}}" name="id">
-            <div class="form-group">
+            <div class="form-group-2">
                 <label for="">Titulo</label>
                 <input type="text" placeholder="Titulo" value="{{novedad.titulo}}" class="form-control" name="titulo">
             </div>
-            <div class="form-group">
+            <div class="form-group-2">
                 <label for="">Subtitulo</label>
                 <textarea name="subtitulo" class="form-control" placeholder="Subtitulo">{{novedad.subtitulo}}</textarea>
             </div>
-            <div class="form-group">
+            <div class="form-group-2">
                 <p>
                     <label>Imagen: <input type="file" name="imagen" id="imagen" class="form-control"/></label>
                 </p>
@@ -21,7 +21,7 @@
                     <input type="hidden" name="img_original" value="{{novedad.img_id}}">
                 </p>   
                 </div>
-            <div class="form-group">
+            <div class="form-group-2">
                 <label for="">Cuerpo</label>
                 <textarea name="cuerpo" class="form-control" placeholder="Cuerpo">{{novedad.cuerpo}}</textarea>
             </div>

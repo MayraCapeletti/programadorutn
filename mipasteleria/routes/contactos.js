@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', async(req, res, netx)=>{
 
-  console.log(req.body)
+  
 
   var nombre = req.body.nombre;
   var email = req.body.email;
@@ -19,7 +19,7 @@ router.post('/', async(req, res, netx)=>{
   var obj = {
     to: 'mayracepeletti@gmail.com',
     subject: 'CONTACTO WEB',
-    html: nombre + "" + "se contacto a trvés de la web y quiere más información a este correo: " + email + ". <br> Además hizo este comentario : " + mensaje + ".<br> Su tel es: " + tel
+    html: nombre + "" + " se contacto a trvés de la web y quiere más información a este correo: " + email + ". <br> Además hizo este comentario : " + mensaje + ".<br> Su tel es: " + tel
   }
 
   var transport = nodemailer.createTransport({
